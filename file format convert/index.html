@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Format Converter</title>
+    <link rel="stylesheet" href="sytles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>File Format Converter</h1>
+        <p>Choose a file and select the format to convert it to.</p>
+
+        <!-- File Upload Section -->
+        <div class="upload-section">
+            <input type="file" id="file-upload" accept="image/*, application/pdf" />
+            <div id="drop-zone">
+                <p>Or Drag & Drop a file here</p>
+            </div>
+        </div>
+
+        <!-- Format Selection Section -->
+        <div class="format-section">
+            <label for="format-select">Select Output Format: </label>
+            <select id="format-select">
+                <option value="png">PNG</option>
+                <option value="jpg">JPG</option>
+                <option value="pdf">PDF</option>
+                <!-- Add more formats as needed -->
+            </select>
+        </div>
+
+        <!-- Convert and Download Button -->
+        <button id="convert-btn">Convert</button>
+        <button id="download-btn" style="display:none;">Download Converted File</button>
+
+        <!-- Progress Indicator -->
+        <div id="progress" style="display:none;">
+            <p>Converting...</p>
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

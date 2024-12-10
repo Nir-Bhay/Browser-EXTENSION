@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    /* Black background */
+    color: rgb(0, 0, 0);
+    /* White text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    /* Slightly lighter black for container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(46, 46, 46, 0.3);
+    /* Light white shadow */
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Soft shadow for better visibility */
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #000000;
+    /* White border */
+    background: #ffffff;
+    /* Dark gray background */
+    color: rgb(0, 0, 0);
+    /* White text inside input */
+    transition: background 0.3s ease;
+}
+
+input:focus {
+    background: #d4d4d4;
+    /* Lighter gray when focused */
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background: #000000;
+    /* White background for button */
+    color: #ffffff;
+    /* Black text */
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: #cccccc;
+    /* Light gray hover effect */
+}
+
+.loading-message,
+.error-message {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.loading-message {
+    color: #999;
+    /* Gray color for loading message */
+}
+
+.error-message {
+    color: #e74c3c;
+    /* Red color for error message */
+}
+
+.results-container {
+    margin-top: 20px;
+}
+
+.result-item {
+    background: #e6e6e6;
+    /* Dark gray background for results */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.result-item:hover {
+    background: #c6c6c6;
+    /* Slightly lighter gray on hover */
+}
+.result-item a {
+    font-weight: bold;
+   color: rgb(0, 0, 0);
+}
+
+.watch-button {
+    background: #ffffff;
+    /* White background for watch button */
+    padding: 5px 10px;
+    color: #000000;
+    /* Black text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.watch-button:hover {
+    background: #b5b5b5;
+    /* Light gray hover effect */
+}
+
+.not-available {
+    color: #e74c3c;
+    /* Red for unavailable message */
+    font-style: italic;
+    text-decoration: underline;
+}

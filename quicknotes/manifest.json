@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Note",
+  "version": "1.0",
+  "description": "Quickly take and manage notes in your browser.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon48.png"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

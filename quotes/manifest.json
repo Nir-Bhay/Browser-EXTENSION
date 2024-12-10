@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Enhanced Motivational Quotes",
+  "version": "3.0",
+  "description": "A motivational quotes extension with categories, favorites, and a stunning UI.",
+  "author": "Your Name",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

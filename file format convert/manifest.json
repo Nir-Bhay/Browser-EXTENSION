@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "File Format Converter",
+  "version": "1.0",
+  "description": "Convert files between different formats.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  }
+   
+  
+}

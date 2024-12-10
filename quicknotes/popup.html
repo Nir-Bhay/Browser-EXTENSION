@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Note</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Quick Note</h1>
+    <textarea id="note-input" placeholder="Type your note here..."></textarea>
+    <div class="actions">
+      <button id="save-btn" title="Save Note">💾 Save</button>
+      <button id="export-btn" title="Export Notes">📤 Export</button>
+    </div>
+    <input type="text" id="search-input" placeholder="Search notes..." />
+    <ul id="notes-list"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

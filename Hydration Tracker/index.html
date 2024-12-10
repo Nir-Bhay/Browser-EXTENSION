@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydration Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tracker-container">
+    <h1 class="app-title">💧 Hydration Tracker</h1>
+    <button id="toggle-theme" class="theme-btn">🌙 Dark Mode</button>
+
+    <!-- Progress Section -->
+    <div class="progress-section">
+      <p class="goal-text">Daily Goal: <span id="goal">8</span> Glasses</p>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="logged-text"><span id="logged">0</span> / <span id="goal-display">8</span> Glasses</p>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <label for="goal-input">Set Your Goal</label>
+      <div class="goal-input-wrapper">
+        <input type="number" id="goal-input" class="input" placeholder="E.g., 8">
+        <button id="set-goal" class="btn">Set</button>
+      </div>
+    </div>
+
+    <!-- Reminder Section -->
+    <div class="reminder-section">
+      <label for="reminder-interval">Reminder Frequency</label>
+      <select id="reminder-interval" class="dropdown">
+        <option value="15">Every 15 min</option>
+        <option value="30">Every 30 min</option>
+        <option value="60">Every 1 hour</option>
+      </select>
+      <button id="set-reminder" class="btn">Set Reminder</button>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button id="log-water" class="btn primary-btn">Log Glass</button>
+      <button id="reset" class="btn danger-btn">Reset</button>
+    </div>
+
+    <!-- History Section -->
+    <div class="history-section">
+      <h2>History</h2>
+      <ul id="history-log" class="history-log">
+        <!-- History entries will populate dynamically -->
+      </ul>
+    </div>
+
+    <!-- Motivational Quote -->
+    <div id="quote" class="motivational-quote">
+      "Stay hydrated, stay healthy!"
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

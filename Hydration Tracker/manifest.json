@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Hydration Tracker",
+  "version": "1.0",
+  "description": "Keep track of your water intake and stay hydrated!",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["storage", "notifications"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

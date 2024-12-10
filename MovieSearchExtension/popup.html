@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Extension</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Find MY Movie</h1>
+        <p>This extension allows you to search for your favorite movies. Simply enter the movie title in the input field and click "Search" to see the top 5 results.</p>
+        <div class="input-container">
+            <input type="text" id="movie-input" placeholder="Enter movie name..." />
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+        <div id="loading" class="loading-message" style="display: none;">Searching...</div>
+        <div id="message" class="error-message"></div>
+        <div id="results" class="results-container"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* General styles for the extension */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 800px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+
+
+
+#drop-zone {
+    border: 2px dashed #4CAF50;
+    padding: 15px;
+    cursor: pointer;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.format-section {
+    margin-top: 15px;
+}
+
+select {
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#progress {
+    margin-top: 15px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 5px;
+    background-color: #4CAF50;
+}
+
+#download-btn {
+    margin-top: 15px;
+    background-color: #008CBA;
+}
+
+#download-btn:hover {
+    background-color: #007B9A;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    button,
+    select {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
